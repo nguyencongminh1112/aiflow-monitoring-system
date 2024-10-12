@@ -1,0 +1,41 @@
+[2024-07-04T03:44:00.706+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-04T03:44:00.726+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.get_failed_dag manual__2024-07-04T03:33:27.322272+00:00 [queued]>
+[2024-07-04T03:44:00.730+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.get_failed_dag manual__2024-07-04T03:33:27.322272+00:00 [queued]>
+[2024-07-04T03:44:00.731+0000] {taskinstance.py:2306} INFO - Starting attempt 14 of 15
+[2024-07-04T03:44:00.737+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_failed_dag> on 2024-07-04 03:33:27.322272+00:00
+[2024-07-04T03:44:00.741+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=16608) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-04T03:44:00.742+0000] {standard_task_runner.py:63} INFO - Started process 16611 to run task
+[2024-07-04T03:44:00.741+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Fail_Dags_Monitor', 'get_failed_dag', 'manual__2024-07-04T03:33:27.322272+00:00', '--job-id', '352', '--raw', '--subdir', 'DAGS_FOLDER/fail_dags_monitor.py', '--cfg-path', '/tmp/tmpfw1tvut4']
+[2024-07-04T03:44:00.742+0000] {standard_task_runner.py:91} INFO - Job 352: Subtask get_failed_dag
+[2024-07-04T03:44:00.780+0000] {task_command.py:426} INFO - Running <TaskInstance: Fail_Dags_Monitor.get_failed_dag manual__2024-07-04T03:33:27.322272+00:00 [running]> on host 0b64c9d791b9
+[2024-07-04T03:44:00.847+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='congminh.nguyen@onpoint.vn' AIRFLOW_CTX_DAG_ID='Fail_Dags_Monitor' AIRFLOW_CTX_TASK_ID='get_failed_dag' AIRFLOW_CTX_EXECUTION_DATE='2024-07-04T03:33:27.322272+00:00' AIRFLOW_CTX_TRY_NUMBER='14' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-04T03:33:27.322272+00:00'
+[2024-07-04T03:44:00.848+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-04T03:44:00.860+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/***/dags
+[2024-07-04T03:44:00.872+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/***/dags
+[2024-07-04T03:44:00.880+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-04T03:44:00.880+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fail_dags_monitor.py", line 34, in get_failed_dag
+    id: x[dag] for x in dag_list
+        ~^^^^^
+TypeError: string indices must be integers, not 'DAG'
+[2024-07-04T03:44:00.889+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=Fail_Dags_Monitor, task_id=get_failed_dag, run_id=manual__2024-07-04T03:33:27.322272+00:00, execution_date=20240704T033327, start_date=20240704T034400, end_date=20240704T034400
+[2024-07-04T03:44:00.897+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 352 for task get_failed_dag (string indices must be integers, not 'DAG'; 16611)
+[2024-07-04T03:44:00.927+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-04T03:44:00.946+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-04T03:44:00.947+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

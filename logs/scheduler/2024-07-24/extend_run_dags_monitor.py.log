@@ -1,0 +1,203 @@
+[2024-07-24T03:06:18.584+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:06:18.585+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:06:18.586+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:06:18.586+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:06:18.594+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:06:18.649+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:06:18.648+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:06:18.660+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:06:18.660+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 01:15:00+00:00, run_after=2024-07-24 02:15:00+00:00
+[2024-07-24T03:06:18.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.090 seconds
+[2024-07-24T03:06:48.976+0000] {processor.py:161} INFO - Started process (PID=212) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:06:48.978+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:06:48.980+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:06:48.980+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:06:48.996+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:06:49.021+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:06:49.020+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:06:49.037+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:06:49.037+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 02:15:00+00:00, run_after=2024-07-24 03:15:00+00:00
+[2024-07-24T03:06:49.055+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.084 seconds
+[2024-07-24T03:07:19.308+0000] {processor.py:161} INFO - Started process (PID=240) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:07:19.310+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:07:19.311+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:07:19.311+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:07:19.327+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:07:19.358+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:07:19.358+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:07:19.380+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:07:19.380+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 02:15:00+00:00, run_after=2024-07-24 03:15:00+00:00
+[2024-07-24T03:07:19.394+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.089 seconds
+[2024-07-24T03:07:49.710+0000] {processor.py:161} INFO - Started process (PID=262) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:07:49.713+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:07:49.716+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:07:49.716+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:07:49.734+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:07:49.758+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:07:49.757+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:07:49.773+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:07:49.772+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 02:15:00+00:00, run_after=2024-07-24 03:15:00+00:00
+[2024-07-24T03:07:49.786+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.082 seconds
+[2024-07-24T03:08:20.112+0000] {processor.py:161} INFO - Started process (PID=290) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:08:20.114+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:08:20.116+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:08:20.115+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:08:20.130+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:08:20.154+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:08:20.154+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:08:20.169+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:08:20.169+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 02:15:00+00:00, run_after=2024-07-24 03:15:00+00:00
+[2024-07-24T03:08:20.180+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.075 seconds
+[2024-07-24T03:08:50.502+0000] {processor.py:161} INFO - Started process (PID=318) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:08:50.504+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:08:50.507+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:08:50.507+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:08:50.523+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:08:50.553+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:08:50.553+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:08:50.569+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:08:50.569+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 02:15:00+00:00, run_after=2024-07-24 03:15:00+00:00
+[2024-07-24T03:08:50.582+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.087 seconds
+[2024-07-24T03:11:49.215+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:11:49.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:11:49.217+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:11:49.217+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:11:49.223+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:11:49.298+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:11:49.298+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:11:49.317+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:11:49.317+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 02:15:00+00:00, run_after=2024-07-24 03:15:00+00:00
+[2024-07-24T03:11:49.330+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.118 seconds
+[2024-07-24T03:12:19.652+0000] {processor.py:161} INFO - Started process (PID=207) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:12:19.654+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:12:19.657+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:12:19.656+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:12:19.677+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:12:19.722+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:12:19.721+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:12:19.736+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:12:19.736+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 02:15:00+00:00, run_after=2024-07-24 03:15:00+00:00
+[2024-07-24T03:12:19.751+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.107 seconds
+[2024-07-24T03:12:50.023+0000] {processor.py:161} INFO - Started process (PID=234) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:12:50.024+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:12:50.026+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:12:50.026+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:12:50.043+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:12:50.084+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:12:50.084+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:12:50.102+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:12:50.102+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 02:15:00+00:00, run_after=2024-07-24 03:15:00+00:00
+[2024-07-24T03:12:50.115+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.099 seconds
+[2024-07-24T03:13:20.428+0000] {processor.py:161} INFO - Started process (PID=262) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:13:20.430+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:13:20.432+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:13:20.431+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:13:20.445+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:13:20.468+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:13:20.468+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:13:20.485+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:13:20.485+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 02:15:00+00:00, run_after=2024-07-24 03:15:00+00:00
+[2024-07-24T03:13:20.495+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.072 seconds
+[2024-07-24T03:13:50.844+0000] {processor.py:161} INFO - Started process (PID=284) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:13:50.846+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:13:50.849+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:13:50.849+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:13:50.865+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:13:50.899+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:13:50.898+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:13:50.927+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:13:50.927+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 02:15:00+00:00, run_after=2024-07-24 03:15:00+00:00
+[2024-07-24T03:13:50.942+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.104 seconds
+[2024-07-24T03:14:21.286+0000] {processor.py:161} INFO - Started process (PID=312) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:14:21.287+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:14:21.291+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:14:21.291+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:14:21.322+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:14:21.360+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:14:21.360+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:14:21.379+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:14:21.379+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 02:15:00+00:00, run_after=2024-07-24 03:15:00+00:00
+[2024-07-24T03:14:21.401+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.123 seconds
+[2024-07-24T03:14:51.692+0000] {processor.py:161} INFO - Started process (PID=334) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:14:51.695+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:14:51.696+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:14:51.696+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:14:51.722+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:14:51.744+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:14:51.744+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:14:51.759+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:14:51.759+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 02:15:00+00:00, run_after=2024-07-24 03:15:00+00:00
+[2024-07-24T03:14:51.770+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.083 seconds
+[2024-07-24T03:15:22.079+0000] {processor.py:161} INFO - Started process (PID=373) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:15:22.080+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:15:22.083+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:15:22.082+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:15:22.095+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:15:22.117+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:15:22.116+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:15:22.130+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:15:22.130+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:15:22.141+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.068 seconds
+[2024-07-24T03:15:52.476+0000] {processor.py:161} INFO - Started process (PID=395) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:15:52.478+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:15:52.481+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:15:52.481+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:15:52.497+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:15:52.529+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:15:52.529+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:15:52.548+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:15:52.548+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:15:52.595+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.124 seconds
+[2024-07-24T03:16:22.954+0000] {processor.py:161} INFO - Started process (PID=423) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:16:22.955+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:16:22.957+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:16:22.957+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:16:22.970+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:16:22.997+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:16:22.996+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:16:23.014+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:16:23.014+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:16:23.026+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.079 seconds
+[2024-07-24T03:16:53.358+0000] {processor.py:161} INFO - Started process (PID=445) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:16:53.360+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:16:53.362+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:16:53.361+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:16:53.380+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:16:53.399+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:16:53.399+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:16:53.417+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:16:53.417+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:16:53.430+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.079 seconds
+[2024-07-24T03:17:23.757+0000] {processor.py:161} INFO - Started process (PID=473) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:17:23.758+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:17:23.760+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:17:23.760+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:17:23.784+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:17:23.804+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:17:23.804+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:17:23.817+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:17:23.817+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:17:23.830+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.082 seconds
+[2024-07-24T03:17:54.156+0000] {processor.py:161} INFO - Started process (PID=495) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:17:54.157+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:17:54.161+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:17:54.160+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:17:54.180+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:17:54.205+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:17:54.205+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:17:54.222+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:17:54.222+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:17:54.234+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.085 seconds
+[2024-07-24T03:18:24.496+0000] {processor.py:161} INFO - Started process (PID=523) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:18:24.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:18:24.499+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:18:24.499+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:18:24.518+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:18:24.537+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:18:24.536+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:18:24.549+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:18:24.549+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:18:24.561+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.072 seconds
+[2024-07-24T03:18:54.818+0000] {processor.py:161} INFO - Started process (PID=545) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:18:54.820+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:18:54.823+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:18:54.823+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:18:54.837+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:18:54.860+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:18:54.860+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:18:54.874+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:18:54.874+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:18:54.887+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.074 seconds
+[2024-07-24T03:19:25.230+0000] {processor.py:161} INFO - Started process (PID=573) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:19:25.231+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:19:25.233+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:19:25.233+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:19:25.255+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:19:25.278+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:19:25.278+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:19:25.294+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:19:25.293+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:19:25.307+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.086 seconds
+[2024-07-24T03:19:55.627+0000] {processor.py:161} INFO - Started process (PID=595) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:19:55.629+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:19:55.631+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:19:55.631+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:19:55.652+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:19:55.673+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:19:55.673+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:19:55.690+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:19:55.690+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:19:55.703+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.084 seconds
+[2024-07-24T03:20:26.018+0000] {processor.py:161} INFO - Started process (PID=623) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:20:26.024+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:20:26.027+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:20:26.027+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:20:26.040+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:20:26.061+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:20:26.061+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:20:26.074+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:20:26.074+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:20:26.089+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.078 seconds
+[2024-07-24T03:20:56.429+0000] {processor.py:161} INFO - Started process (PID=645) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:20:56.432+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:20:56.435+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:20:56.434+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:20:56.453+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:20:56.495+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:20:56.494+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:20:56.513+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:20:56.513+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:20:56.530+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.108 seconds
+[2024-07-24T03:21:26.924+0000] {processor.py:161} INFO - Started process (PID=672) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:21:26.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:21:26.930+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:21:26.930+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:21:26.945+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:21:26.983+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:21:26.983+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:21:27.000+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:21:27.000+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:21:27.016+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.098 seconds
+[2024-07-24T03:21:57.332+0000] {processor.py:161} INFO - Started process (PID=694) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:21:57.335+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:21:57.342+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:21:57.342+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:21:57.356+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:21:57.380+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:21:57.380+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:21:57.395+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:21:57.395+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:21:57.406+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.085 seconds
+[2024-07-24T03:22:27.739+0000] {processor.py:161} INFO - Started process (PID=722) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:22:27.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:22:27.741+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:22:27.741+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:22:27.755+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:22:27.786+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:22:27.786+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:22:27.802+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:22:27.802+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:22:27.816+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.083 seconds
+[2024-07-24T03:22:58.127+0000] {processor.py:161} INFO - Started process (PID=744) to work on /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:22:58.129+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extend_run_dags_monitor.py for tasks to queue
+[2024-07-24T03:22:58.132+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:22:58.131+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:22:58.147+0000] {processor.py:840} INFO - DAG(s) 'Extend_Run_Dags_Monitor' retrieved from /opt/airflow/dags/extend_run_dags_monitor.py
+[2024-07-24T03:22:58.172+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:22:58.171+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-24T03:22:58.231+0000] {logging_mixin.py:188} INFO - [2024-07-24T03:22:58.231+0000] {dag.py:3954} INFO - Setting next_dagrun for Extend_Run_Dags_Monitor to 2024-07-24 03:15:00+00:00, run_after=2024-07-24 04:15:00+00:00
+[2024-07-24T03:22:58.248+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extend_run_dags_monitor.py took 0.127 seconds

@@ -1,0 +1,41 @@
+[2024-07-10T10:31:00.119+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-10T10:31:00.133+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Email_test_dag.fail_task scheduled__2024-07-10T10:30:00+00:00 [queued]>
+[2024-07-10T10:31:00.136+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Email_test_dag.fail_task scheduled__2024-07-10T10:30:00+00:00 [queued]>
+[2024-07-10T10:31:00.136+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-10T10:31:00.141+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): fail_task> on 2024-07-10 10:30:00+00:00
+[2024-07-10T10:31:00.144+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1573) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-10T10:31:00.145+0000] {standard_task_runner.py:63} INFO - Started process 1574 to run task
+[2024-07-10T10:31:00.144+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Email_test_dag', 'fail_task', 'scheduled__2024-07-10T10:30:00+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmphker3im4']
+[2024-07-10T10:31:00.145+0000] {standard_task_runner.py:91} INFO - Job 65: Subtask fail_task
+[2024-07-10T10:31:00.164+0000] {task_command.py:426} INFO - Running <TaskInstance: Email_test_dag.fail_task scheduled__2024-07-10T10:30:00+00:00 [running]> on host 886d6fa7a515
+[2024-07-10T10:31:00.197+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='thanh.huynh@onpoint.vn,congminh.nguyen@onpoint.vn' AIRFLOW_CTX_DAG_OWNER='thanh.huynh@onpoint.vn' AIRFLOW_CTX_DAG_ID='Email_test_dag' AIRFLOW_CTX_TASK_ID='fail_task' AIRFLOW_CTX_EXECUTION_DATE='2024-07-10T10:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-10T10:30:00+00:00'
+[2024-07-10T10:31:00.198+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-10T10:31:00.204+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-07-10T10:31:00.204+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd non_exist_folder']
+[2024-07-10T10:31:00.207+0000] {subprocess.py:86} INFO - Output:
+[2024-07-10T10:31:00.208+0000] {subprocess.py:93} INFO - /usr/bin/bash: line 1: cd: non_exist_folder: No such file or directory
+[2024-07-10T10:31:00.208+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-07-10T10:31:00.208+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-10T10:31:00.213+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-07-10T10:31:00.215+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=Email_test_dag, task_id=fail_task, run_id=scheduled__2024-07-10T10:30:00+00:00, execution_date=20240710T103000, start_date=20240710T103100, end_date=20240710T103100
+[2024-07-10T10:31:00.222+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-07-10T10:31:00.222+0000] {email.py:271} INFO - Email alerting: attempt 1
+[2024-07-10T10:31:02.810+0000] {local_task_job_runner.py:124} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-07-10T10:31:02.815+0000] {process_utils.py:132} INFO - Sending 15 to group 1574. PIDs of all processes in the group: [1574]
+[2024-07-10T10:31:02.816+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 1574
+[2024-07-10T10:31:02.842+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-07-10T10:31:02.846+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2024-07-10T10:31:02.865+0000] {email.py:271} INFO - Email alerting: attempt 1

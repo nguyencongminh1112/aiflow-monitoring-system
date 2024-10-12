@@ -1,0 +1,47 @@
+[2024-07-06T13:42:49.888+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-06T13:42:49.906+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.load scheduled__2024-07-06T12:15:00+00:00 [queued]>
+[2024-07-06T13:42:49.910+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.load scheduled__2024-07-06T12:15:00+00:00 [queued]>
+[2024-07-06T13:42:49.911+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 3
+[2024-07-06T13:42:49.917+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load> on 2024-07-06 12:15:00+00:00
+[2024-07-06T13:42:49.923+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=56481) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-06T13:42:49.924+0000] {standard_task_runner.py:63} INFO - Started process 56483 to run task
+[2024-07-06T13:42:49.923+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Fail_Dags_Monitor', 'load', 'scheduled__2024-07-06T12:15:00+00:00', '--job-id', '814', '--raw', '--subdir', 'DAGS_FOLDER/fail_dags_monitor.py', '--cfg-path', '/tmp/tmpzuk9oupw']
+[2024-07-06T13:42:49.925+0000] {standard_task_runner.py:91} INFO - Job 814: Subtask load
+[2024-07-06T13:42:49.956+0000] {task_command.py:426} INFO - Running <TaskInstance: Fail_Dags_Monitor.load scheduled__2024-07-06T12:15:00+00:00 [running]> on host 0b64c9d791b9
+[2024-07-06T13:42:50.005+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='congminh.nguyen@onpoint.vn' AIRFLOW_CTX_DAG_ID='Fail_Dags_Monitor' AIRFLOW_CTX_TASK_ID='load' AIRFLOW_CTX_EXECUTION_DATE='2024-07-06T12:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-06T12:15:00+00:00'
+[2024-07-06T13:42:50.005+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-06T13:42:50.162+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/***/dags
+[2024-07-06T14:15:12.411+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-06T14:15:12.423+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fail_dags_monitor.py", line 67, in load
+    conn = psycopg2.connect(database=DB_NAME,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "athena-uat.cybjleasxg2d.ap-southeast-1.rds.amazonaws.com" (172.31.22.247), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2024-07-06T14:15:12.435+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=Fail_Dags_Monitor, task_id=load, run_id=scheduled__2024-07-06T12:15:00+00:00, execution_date=20240706T121500, start_date=20240706T134249, end_date=20240706T141512
+[2024-07-06T14:15:12.447+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 814 for task load (connection to server at "athena-uat.cybjleasxg2d.ap-southeast-1.rds.amazonaws.com" (172.31.22.247), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+; 56483)
+[2024-07-06T14:15:12.479+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-06T14:15:12.497+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-06T14:15:12.498+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

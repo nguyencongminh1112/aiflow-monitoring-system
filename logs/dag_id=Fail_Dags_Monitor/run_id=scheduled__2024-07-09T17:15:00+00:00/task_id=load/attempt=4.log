@@ -1,0 +1,21 @@
+[2024-07-10T02:25:59.982+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-10T02:26:00.005+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.load scheduled__2024-07-09T17:15:00+00:00 [queued]>
+[2024-07-10T02:26:00.014+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.load scheduled__2024-07-09T17:15:00+00:00 [queued]>
+[2024-07-10T02:26:00.014+0000] {taskinstance.py:2306} INFO - Starting attempt 4 of 6
+[2024-07-10T02:26:00.022+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load> on 2024-07-09 17:15:00+00:00
+[2024-07-10T02:26:00.034+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=35544) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-10T02:26:00.032+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Fail_Dags_Monitor', 'load', 'scheduled__2024-07-09T17:15:00+00:00', '--job-id', '3386', '--raw', '--subdir', 'DAGS_FOLDER/fail_dags_monitor.py', '--cfg-path', '/tmp/tmpbwyxudfw']
+[2024-07-10T02:26:00.035+0000] {standard_task_runner.py:63} INFO - Started process 35546 to run task
+[2024-07-10T02:26:00.035+0000] {standard_task_runner.py:91} INFO - Job 3386: Subtask load
+[2024-07-10T02:26:00.064+0000] {task_command.py:426} INFO - Running <TaskInstance: Fail_Dags_Monitor.load scheduled__2024-07-09T17:15:00+00:00 [running]> on host ec4fc0d2456a
+[2024-07-10T02:26:00.121+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='congminh.nguyen@onpoint.vn' AIRFLOW_CTX_DAG_ID='Fail_Dags_Monitor' AIRFLOW_CTX_TASK_ID='load' AIRFLOW_CTX_EXECUTION_DATE='2024-07-09T17:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-09T17:15:00+00:00'
+[2024-07-10T02:26:00.122+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-10T02:26:00.299+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/***/dags
+[2024-07-10T02:26:01.324+0000] {logging_mixin.py:188} INFO - Successfully connect to database!
+[2024-07-10T02:26:02.000+0000] {logging_mixin.py:188} INFO - Insert time: 0.6748332977294922 seconds
+[2024-07-10T02:26:02.000+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-10T02:26:02.001+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-10T02:26:02.008+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Fail_Dags_Monitor, task_id=load, run_id=scheduled__2024-07-09T17:15:00+00:00, execution_date=20240709T171500, start_date=20240710T022600, end_date=20240710T022602
+[2024-07-10T02:26:02.058+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-10T02:26:02.068+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-10T02:26:02.069+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

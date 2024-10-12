@@ -1,0 +1,26 @@
+[2024-07-13T07:42:28.952+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-13T07:42:28.996+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Extend_Run_Dags_Monitor.stop_long_running_tasks scheduled__2024-07-13T06:15:00+00:00 [queued]>
+[2024-07-13T07:42:29.009+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Extend_Run_Dags_Monitor.stop_long_running_tasks scheduled__2024-07-13T06:15:00+00:00 [queued]>
+[2024-07-13T07:42:29.009+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2024-07-13T07:42:29.030+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): stop_long_running_tasks> on 2024-07-13 06:15:00+00:00
+[2024-07-13T07:42:29.040+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=504) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-13T07:42:29.041+0000] {standard_task_runner.py:63} INFO - Started process 526 to run task
+[2024-07-13T07:42:29.042+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Extend_Run_Dags_Monitor', 'stop_long_running_tasks', 'scheduled__2024-07-13T06:15:00+00:00', '--job-id', '1833', '--raw', '--subdir', 'DAGS_FOLDER/extend_run_dags_monitor.py', '--cfg-path', '/tmp/tmp5y6t4a17']
+[2024-07-13T07:42:29.045+0000] {standard_task_runner.py:91} INFO - Job 1833: Subtask stop_long_running_tasks
+[2024-07-13T07:42:29.109+0000] {task_command.py:426} INFO - Running <TaskInstance: Extend_Run_Dags_Monitor.stop_long_running_tasks scheduled__2024-07-13T06:15:00+00:00 [running]> on host a9aa3835bb3f
+[2024-07-13T07:42:29.182+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='congminh.nguyen@ponpoint.vn' AIRFLOW_CTX_DAG_ID='Extend_Run_Dags_Monitor' AIRFLOW_CTX_TASK_ID='stop_long_running_tasks' AIRFLOW_CTX_EXECUTION_DATE='2024-07-13T06:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-13T06:15:00+00:00'
+[2024-07-13T07:42:29.184+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-13T07:42:29.205+0000] {extend_run_dags_monitor.py:32} INFO - max_running_time: 0
+[2024-07-13T07:42:29.215+0000] {extend_run_dags_monitor.py:40} INFO - task_id: fail_task, dag_id: Email_test_dag, start_date: 2024-07-13 06:23:34.654362+00:00, job_id: 1815, pid: 441, hostname: a9aa3835bb3f, unixname: default
+[2024-07-13T07:42:29.216+0000] {extend_run_dags_monitor.py:40} INFO - task_id: fail_task, dag_id: Email_test_dag, start_date: 2024-07-13 06:23:34.805494+00:00, job_id: 1817, pid: 443, hostname: a9aa3835bb3f, unixname: default
+[2024-07-13T07:42:29.217+0000] {extend_run_dags_monitor.py:40} INFO - task_id: fail_task, dag_id: Email_test_dag, start_date: 2024-07-13 06:24:01.090817+00:00, job_id: 1831, pid: 502, hostname: a9aa3835bb3f, unixname: default
+[2024-07-13T07:42:29.221+0000] {extend_run_dags_monitor.py:40} INFO - task_id: fail_task, dag_id: Email_test_dag, start_date: 2024-07-13 06:23:38.458791+00:00, job_id: 1826, pid: 479, hostname: a9aa3835bb3f, unixname: default
+[2024-07-13T07:42:29.222+0000] {extend_run_dags_monitor.py:40} INFO - task_id: fail_task, dag_id: Email_test_dag, start_date: 2024-07-13 06:23:38.459862+00:00, job_id: 1825, pid: 480, hostname: a9aa3835bb3f, unixname: default
+[2024-07-13T07:42:29.222+0000] {extend_run_dags_monitor.py:40} INFO - task_id: fail_task, dag_id: Email_test_dag, start_date: 2024-07-13 06:23:59.850080+00:00, job_id: 1830, pid: 499, hostname: a9aa3835bb3f, unixname: default
+[2024-07-13T07:42:29.223+0000] {extend_run_dags_monitor.py:45} INFO - Sending this tasks to shutdown: ['fail_task', 'fail_task', 'fail_task', 'fail_task', 'fail_task', 'fail_task']
+[2024-07-13T07:42:29.240+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-13T07:42:29.241+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-13T07:42:29.254+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Extend_Run_Dags_Monitor, task_id=stop_long_running_tasks, run_id=scheduled__2024-07-13T06:15:00+00:00, execution_date=20240713T061500, start_date=20240713T074228, end_date=20240713T074229
+[2024-07-13T07:42:29.269+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-13T07:42:29.281+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-13T07:42:29.283+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

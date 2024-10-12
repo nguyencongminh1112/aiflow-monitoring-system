@@ -1,0 +1,22 @@
+[2024-07-02T06:32:02.127+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-02T06:32:02.140+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Monitor_Airflow.stop_long_running_tasks scheduled__2024-07-02T05:15:00+00:00 [queued]>
+[2024-07-02T06:32:02.144+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Monitor_Airflow.stop_long_running_tasks scheduled__2024-07-02T05:15:00+00:00 [queued]>
+[2024-07-02T06:32:02.144+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2024-07-02T06:32:02.150+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): stop_long_running_tasks> on 2024-07-02 05:15:00+00:00
+[2024-07-02T06:32:02.154+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=137) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-02T06:32:02.155+0000] {standard_task_runner.py:63} INFO - Started process 139 to run task
+[2024-07-02T06:32:02.156+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Monitor_Airflow', 'stop_long_running_tasks', 'scheduled__2024-07-02T05:15:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/monitor_dag.py', '--cfg-path', '/tmp/tmpfitpib23']
+[2024-07-02T06:32:02.157+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask stop_long_running_tasks
+[2024-07-02T06:32:02.182+0000] {task_command.py:426} INFO - Running <TaskInstance: Monitor_Airflow.stop_long_running_tasks scheduled__2024-07-02T05:15:00+00:00 [running]> on host 2da02a4e0054
+[2024-07-02T06:32:02.222+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='congminh.nguyen@ponpoint.vn' AIRFLOW_CTX_DAG_ID='Monitor_Airflow' AIRFLOW_CTX_TASK_ID='stop_long_running_tasks' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T05:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T05:15:00+00:00'
+[2024-07-02T06:32:02.224+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-02T06:32:02.228+0000] {monitor_dag.py:35} INFO - max_running_hours: 24
+[2024-07-02T06:32:02.234+0000] {monitor_dag.py:51} INFO - Nothing to clean
+[2024-07-02T06:32:02.235+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-02T06:32:02.235+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-02T06:32:02.240+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Monitor_Airflow, task_id=stop_long_running_tasks, run_id=scheduled__2024-07-02T05:15:00+00:00, execution_date=20240702T051500, start_date=20240702T063202, end_date=20240702T063202
+[2024-07-02T06:32:02.257+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-02T06:32:02.266+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-02T06:32:02.267+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

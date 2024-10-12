@@ -1,0 +1,68 @@
+[2024-07-04T03:36:25.060+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-04T03:36:25.076+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.get_failed_dag manual__2024-07-04T03:33:27.322272+00:00 [queued]>
+[2024-07-04T03:36:25.080+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.get_failed_dag manual__2024-07-04T03:33:27.322272+00:00 [queued]>
+[2024-07-04T03:36:25.081+0000] {taskinstance.py:2306} INFO - Starting attempt 9 of 9
+[2024-07-04T03:36:25.087+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_failed_dag> on 2024-07-04 03:33:27.322272+00:00
+[2024-07-04T03:36:25.092+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=16274) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-04T03:36:25.093+0000] {standard_task_runner.py:63} INFO - Started process 16275 to run task
+[2024-07-04T03:36:25.091+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Fail_Dags_Monitor', 'get_failed_dag', 'manual__2024-07-04T03:33:27.322272+00:00', '--job-id', '347', '--raw', '--subdir', 'DAGS_FOLDER/fail_dags_monitor.py', '--cfg-path', '/tmp/tmpb1sv05o2']
+[2024-07-04T03:36:25.093+0000] {standard_task_runner.py:91} INFO - Job 347: Subtask get_failed_dag
+[2024-07-04T03:36:25.121+0000] {task_command.py:426} INFO - Running <TaskInstance: Fail_Dags_Monitor.get_failed_dag manual__2024-07-04T03:33:27.322272+00:00 [running]> on host 0b64c9d791b9
+[2024-07-04T03:36:25.164+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='congminh.nguyen@onpoint.vn' AIRFLOW_CTX_DAG_ID='Fail_Dags_Monitor' AIRFLOW_CTX_TASK_ID='get_failed_dag' AIRFLOW_CTX_EXECUTION_DATE='2024-07-04T03:33:27.322272+00:00' AIRFLOW_CTX_TRY_NUMBER='9' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-04T03:33:27.322272+00:00'
+[2024-07-04T03:36:25.165+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-04T03:36:25.171+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/***/dags
+[2024-07-04T03:36:25.181+0000] {dagbag.py:545} INFO - Filling up the DagBag from congminh.nguyen@onpoint.vn
+[2024-07-04T03:36:25.194+0000] {python.py:237} INFO - Done. Returned value was: [{'owner': <airflow.models.dagbag.DagBag object at 0xffffa0fa6bd0>, 'id': 167, 'run_id': 'manual__2024-07-04T03:32:53.290166+00:00', 'state': 'failed', 'dag_id': 'Email_test_dag', 'run_type': 'manual', 'execution_date': '2024-07-04T03:32:53.290166+00:00', 'start_date': '2024-07-04T03:32:54.319886+00:00', 'end_date': '2024-07-04T03:33:22.514025+00:00'}]
+[2024-07-04T03:36:25.195+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-04T03:36:25.198+0000] {xcom.py:675} ERROR - Object of type DagBag is not JSON serializable. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your *** config or make sure to decorate your object with attr.
+[2024-07-04T03:36:25.199+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/json.py", line 91, in default
+    return serialize(o)
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/serialization/serde.py", line 189, in serialize
+    raise TypeError(f"cannot serialize object of type {cls}")
+TypeError: cannot serialize object of type <class '***.models.dagbag.DagBag'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 486, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3197, in xcom_push
+    XCom.set(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom.py", line 246, in set
+    value = cls.serialize_value(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/xcom.py", line 673, in serialize_value
+    return json.dumps(value, cls=XComEncoder).encode("UTF-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/json.py", line 104, in encode
+    return super().encode(o)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/json.py", line 93, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type DagBag is not JSON serializable
+[2024-07-04T03:36:25.204+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=Fail_Dags_Monitor, task_id=get_failed_dag, run_id=manual__2024-07-04T03:33:27.322272+00:00, execution_date=20240704T033327, start_date=20240704T033625, end_date=20240704T033625
+[2024-07-04T03:36:25.210+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 347 for task get_failed_dag (Object of type DagBag is not JSON serializable; 16275)
+[2024-07-04T03:36:25.234+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-04T03:36:25.248+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-04T03:36:25.250+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

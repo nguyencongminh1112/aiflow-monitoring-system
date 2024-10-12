@@ -1,0 +1,58 @@
+[2024-07-06T11:53:04.935+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-06T11:53:04.952+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.load scheduled__2024-07-06T10:15:00+00:00 [queued]>
+[2024-07-06T11:53:04.956+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.load scheduled__2024-07-06T10:15:00+00:00 [queued]>
+[2024-07-06T11:53:04.957+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-07-06T11:53:04.963+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load> on 2024-07-06 10:15:00+00:00
+[2024-07-06T11:53:04.968+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=55933) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-06T11:53:04.969+0000] {standard_task_runner.py:63} INFO - Started process 55935 to run task
+[2024-07-06T11:53:04.968+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Fail_Dags_Monitor', 'load', 'scheduled__2024-07-06T10:15:00+00:00', '--job-id', '801', '--raw', '--subdir', 'DAGS_FOLDER/fail_dags_monitor.py', '--cfg-path', '/tmp/tmp_6awur38']
+[2024-07-06T11:53:04.970+0000] {standard_task_runner.py:91} INFO - Job 801: Subtask load
+[2024-07-06T11:53:04.994+0000] {task_command.py:426} INFO - Running <TaskInstance: Fail_Dags_Monitor.load scheduled__2024-07-06T10:15:00+00:00 [running]> on host 0b64c9d791b9
+[2024-07-06T11:53:05.038+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='congminh.nguyen@onpoint.vn' AIRFLOW_CTX_DAG_ID='Fail_Dags_Monitor' AIRFLOW_CTX_TASK_ID='load' AIRFLOW_CTX_EXECUTION_DATE='2024-07-06T10:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-06T10:15:00+00:00'
+[2024-07-06T11:53:05.039+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-06T11:53:05.170+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/***/dags
+[2024-07-06T11:55:30.201+0000] {local_task_job_runner.py:288} WARNING - Recorded pid 55960 does not match the current pid 55935
+[2024-07-06T11:55:30.204+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-06T11:55:30.207+0000] {process_utils.py:132} INFO - Sending 15 to group 55935. PIDs of all processes in the group: [55935]
+[2024-07-06T11:55:30.208+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 55935
+[2024-07-06T11:57:39.328+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-07-06T11:57:39.363+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fail_dags_monitor.py", line 67, in load
+    conn = psycopg2.connect(database=DB_NAME,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "athena-uat.cybjleasxg2d.ap-southeast-1.rds.amazonaws.com" (172.31.22.247), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 441, in _execute_callable
+    log.info("::group::Post task execution logs")
+  File "/usr/local/lib/python3.12/logging/__init__.py", line 1529, in info
+    def info(self, msg, *args, **kwargs):
+    
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2024-07-06T11:57:39.374+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=Fail_Dags_Monitor, task_id=load, run_id=scheduled__2024-07-06T10:15:00+00:00, execution_date=20240706T101500, start_date=20240706T115528, end_date=20240706T115739
+[2024-07-06T11:57:39.431+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=55935, status='terminated', exitcode=2, started='11:53:04') (55935) terminated with exit code 2

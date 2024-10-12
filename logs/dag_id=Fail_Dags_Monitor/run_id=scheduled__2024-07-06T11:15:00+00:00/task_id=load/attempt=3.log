@@ -1,0 +1,19 @@
+[2024-07-06T12:34:57.782+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-06T12:34:57.801+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.load scheduled__2024-07-06T11:15:00+00:00 [queued]>
+[2024-07-06T12:34:57.805+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.load scheduled__2024-07-06T11:15:00+00:00 [queued]>
+[2024-07-06T12:34:57.805+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 3
+[2024-07-06T12:34:57.811+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load> on 2024-07-06 11:15:00+00:00
+[2024-07-06T12:34:57.818+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=56091) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-06T12:34:57.817+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Fail_Dags_Monitor', 'load', 'scheduled__2024-07-06T11:15:00+00:00', '--job-id', '808', '--raw', '--subdir', 'DAGS_FOLDER/fail_dags_monitor.py', '--cfg-path', '/tmp/tmpyfqe0b_7']
+[2024-07-06T12:34:57.819+0000] {standard_task_runner.py:63} INFO - Started process 56093 to run task
+[2024-07-06T12:34:57.819+0000] {standard_task_runner.py:91} INFO - Job 808: Subtask load
+[2024-07-06T12:34:57.851+0000] {task_command.py:426} INFO - Running <TaskInstance: Fail_Dags_Monitor.load scheduled__2024-07-06T11:15:00+00:00 [running]> on host 0b64c9d791b9
+[2024-07-06T12:34:57.905+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='congminh.nguyen@onpoint.vn' AIRFLOW_CTX_DAG_ID='Fail_Dags_Monitor' AIRFLOW_CTX_TASK_ID='load' AIRFLOW_CTX_EXECUTION_DATE='2024-07-06T11:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-06T11:15:00+00:00'
+[2024-07-06T12:34:57.906+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-06T12:34:58.086+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/***/dags
+[2024-07-06T12:39:17.683+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-07-06T12:39:17.689+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-06T12:39:17.693+0000] {process_utils.py:132} INFO - Sending 15 to group 56093. PIDs of all processes in the group: [56093]
+[2024-07-06T12:39:17.694+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 56093
+[2024-07-06T12:39:32.140+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-07-06T12:39:32.263+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=56093, status='terminated', exitcode=0, started='12:34:57') (56093) terminated with exit code 0

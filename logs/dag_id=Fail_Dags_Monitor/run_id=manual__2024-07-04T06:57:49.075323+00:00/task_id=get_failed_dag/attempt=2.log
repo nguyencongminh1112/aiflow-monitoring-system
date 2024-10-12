@@ -1,0 +1,51 @@
+[2024-07-04T06:57:55.804+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-04T06:57:55.844+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.get_failed_dag manual__2024-07-04T06:57:49.075323+00:00 [queued]>
+[2024-07-04T06:57:55.850+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Fail_Dags_Monitor.get_failed_dag manual__2024-07-04T06:57:49.075323+00:00 [queued]>
+[2024-07-04T06:57:55.850+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-07-04T06:57:55.861+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_failed_dag> on 2024-07-04 06:57:49.075323+00:00
+[2024-07-04T06:57:55.902+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=23180) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-04T06:57:55.900+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Fail_Dags_Monitor', 'get_failed_dag', 'manual__2024-07-04T06:57:49.075323+00:00', '--job-id', '400', '--raw', '--subdir', 'DAGS_FOLDER/fail_dags_monitor.py', '--cfg-path', '/tmp/tmpd0bmphc8']
+[2024-07-04T06:57:55.907+0000] {standard_task_runner.py:91} INFO - Job 400: Subtask get_failed_dag
+[2024-07-04T06:57:55.907+0000] {standard_task_runner.py:63} INFO - Started process 23181 to run task
+[2024-07-04T06:57:56.047+0000] {task_command.py:426} INFO - Running <TaskInstance: Fail_Dags_Monitor.get_failed_dag manual__2024-07-04T06:57:49.075323+00:00 [running]> on host 0b64c9d791b9
+[2024-07-04T06:57:56.128+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='congminh.nguyen@onpoint.vn' AIRFLOW_CTX_DAG_ID='Fail_Dags_Monitor' AIRFLOW_CTX_TASK_ID='get_failed_dag' AIRFLOW_CTX_EXECUTION_DATE='2024-07-04T06:57:49.075323+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-04T06:57:49.075323+00:00'
+[2024-07-04T06:57:56.129+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-04T06:57:56.141+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/***/dags
+[2024-07-04T06:57:56.167+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-04T06:57:56.168+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fail_dags_monitor.py", line 34, in get_failed_dag
+    dag_owner = run.dag_model.get('owner')
+                ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 487, in __get__
+    return self.impl.get(state, dict_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 959, in get
+    value = self._fire_loader_callables(state, key, passive)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/attributes.py", line 995, in _fire_loader_callables
+    return self.callable_(state, passive)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/strategies.py", line 863, in _load_for_state
+    raise orm_exc.DetachedInstanceError(
+sqlalchemy.orm.exc.DetachedInstanceError: Parent instance <DagRun at 0xffffb2ab1370> is not bound to a Session; lazy load operation of attribute 'dag_model' cannot proceed (Background on this error at: https://sqlalche.me/e/14/bhk3)
+[2024-07-04T06:57:56.176+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=Fail_Dags_Monitor, task_id=get_failed_dag, run_id=manual__2024-07-04T06:57:49.075323+00:00, execution_date=20240704T065749, start_date=20240704T065755, end_date=20240704T065756
+[2024-07-04T06:57:56.184+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 400 for task get_failed_dag (Parent instance <DagRun at 0xffffb2ab1370> is not bound to a Session; lazy load operation of attribute 'dag_model' cannot proceed (Background on this error at: https://sqlalche.me/e/14/bhk3); 23181)
+[2024-07-04T06:57:56.217+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-04T06:57:56.231+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-04T06:57:56.232+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
